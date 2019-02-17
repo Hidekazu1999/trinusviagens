@@ -124,19 +124,6 @@ header nav ul a:hover {
         animation-timing-function: ease-out;
     }
   }
-  @media (min-width: 340px) {
-    header nav ul {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-    }
-    header .container2 {
-        padding-top: 5rem;
-        text-align: center;
-        font-size: 4px;
-    }
-}
 
 @media (min-width: 510px) {
     header nav ul {
