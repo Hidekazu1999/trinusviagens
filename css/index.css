@@ -1,0 +1,486 @@
+/* CSS */
+
+body {
+    margin: 0;  
+    color:#ffffff;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* HEADER */
+
+header {
+    padding-left: 0;
+    padding-right:0;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background-image: url(../imgs/beach-1867271_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    animation-name: backg;
+    animation-duration: 1s;
+}
+
+@keyframes backg {
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    100%{
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+  }
+
+header .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+header .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 8rem;
+    transition: transform 0.5s;
+    will-change: transform;
+}
+
+header .logo img:active {
+    transform: scale(0.9); 
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav ul a {
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.5s;
+    will-change: transform;
+    color: #000000;
+}
+
+header nav ul a span {
+    border-radius: 20px 10px;
+    background-color: #ffc200;
+    border-bottom: none;
+    padding: 0.3rem;
+    line-height: 2rem;
+}
+
+header nav ul li:hover {
+    transform: scale(0.9); 
+}
+
+header nav ul a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #ffc200;
+}
+
+#slogan {
+    opacity: 0.8;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    font-family: 'Felipa', cursive;
+    animation-name: slogan;
+    animation-duration: 2s;
+    background-color: #0887dbbb;
+    opacity: 0.8;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    line-height: 2.rem;
+    width:100%;
+}
+
+@keyframes slogan {
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        opacity: 0.2;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 0.5;
+        animation-timing-function: ease-out;
+    }
+  }
+
+@media (min-width: 340px) {
+    header nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    header .container2 {
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width: 510px) {
+    header nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .container2 {
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width: 640px) {
+    header {
+        height: 450px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    header .container2 {
+        padding-top: 10rem;
+    }
+}
+
+@media (min-width: 730px) {
+    header {
+        height: 500px;
+    }
+    header .container {
+        justify-content: space-around;
+    }
+    header .container2 {
+        padding-top: 12rem;
+    }
+}
+
+@media (min-width: 950px) {
+    header {
+        height: 600px;
+        padding: 0;
+    }
+    header .logo img {
+        width: 6rem;
+    }
+    header .container2 {
+        padding-top: 18rem;
+    }
+}
+
+/* HOME */
+
+#home {
+    margin-top: 0px;
+    background-image: url(../imgs/sea-1337565_1920.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+}
+
+.text-initial {
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: auto;
+    background-color: #313266; 
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards .card-title {
+    font-family: 'Lobster', cursive;
+}
+
+.card .card-body {
+    font-family: 'Lobster', cursive;
+}
+
+.card .card-link {
+    font-family: 'Lobster', cursive;
+    margin: .5rem;
+    color:#ffffff;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.card .card-link:hover {
+    color: #ffc200;
+}
+
+@media (min-width: 510px) {
+    .cards {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+/* ASSESSMENT */
+ 
+#assessment {
+    margin-top: -20px;
+    background-image: url(../imgs/sea-1337565_1920.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+}
+
+#assessment .cards-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#assessment .card-assessment {
+    padding: .5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: filter .5s;
+    will-change: transform;
+}
+
+#assessment .card-assessment:hover {
+    filter: drop-shadow(3px 3px 4px#313266);
+}
+
+.card-description {
+    padding-top: 8rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    transition: opacity .5s;
+    will-change: opacity;
+}
+
+.card-description:hover {
+    opacity: 1;
+}
+
+.card-cost {
+    width: 300px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    background-color: #00aab6;
+}
+
+.card-cost h3 {
+    text-align: center;
+    opacity: 0.5;
+}
+
+.card-cost h3:hover {
+    opacity: 1;
+}
+
+#card1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../imgs/genipabu-a59c8c.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#card2 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../imgs/piscinas-naturais-maragogi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#card3 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../imgs/porto-de-galinhas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#card4 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../imgs/pelourinho.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: filter .5s;
+    will-change: transform;
+}
+
+@media (min-width: 640px) { 
+    #assessment .cards-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media (min-width: 1250px) {
+    #assessment .cards-img {
+        flex-direction: row; 
+    }
+}
+
+/* FORM */
+
+#form {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(../imgs/sea-1337565_1920.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+}
+
+#form .container {
+    background-color: #00aab6;
+    padding: 2rem;
+    width: 50%;
+}
+form {
+    text-shadow: 1px 1px 2px #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form i {
+    font-size: 40px;
+    color: #cec6ad;
+}
+
+form button {
+    color:#ffffff;
+    font-family: 'Playfair Display', serif;
+    border-radius: 20px 10px;
+    text-shadow: 1px 1px 2px #000000;
+    background-color: #cccac2;
+    border-bottom: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #313266;
+    color: #00aab6;
+}
+
+.p5 {
+    color: white;
+}
+
+.p6 {
+    color: white;
+}
+
+.p7 {
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.baseboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseboard h2 {
+    text-align: center;
+}
+
+.baseboard a {
+    text-decoration-line: none;
+    color:#ffffff;
+}
+
+.baseboard i {
+    padding: 0.5rem;
+    font-size: 40px;
+    color: #ffc200;
+}
+
+.baseboard a:hover, a:active {
+    text-decoration: none;
+    color: #ffc200;
+}
+
+.social .icons {
+    padding: 1rem;
+    display: flex;
+}
+
+.baseboard .address {
+    padding: 1rem;
+    width: 100%;
+}
+
+.baseboard .copyright {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    color:#ffffff;
+}
+
+@media (min-width: 540px) {
+    footer .container {
+        flex-direction: row; 
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
